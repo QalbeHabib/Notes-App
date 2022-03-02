@@ -14,7 +14,7 @@ const NoteContainer = ({
   return (
     <div>
       <Header />
-      <AddNotes newNote={newNote} />;
+      <AddNotes newNote={newNote} />
       <div className="notes-container">
         {notesArr.map((note) => (
           <div key={note.id}>

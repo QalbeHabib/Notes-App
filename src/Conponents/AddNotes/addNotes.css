@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 170px;
-  width: 300px;
-  margin: auto;
+  min-width: 300px;
+  margin: 2rem auto;
   background-color: rgb(189, 255, 127);
   /* margin: 1rem; this will be deleted after gird in the Notes-conteiner */
   padding: 1rem;
@@ -22,6 +22,7 @@ textarea {
   background-color: transparent;
   border: none;
   resize: none;
+  width: 100%;
 }
 
 textarea:focus {
