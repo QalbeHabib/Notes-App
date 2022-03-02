@@ -12,33 +12,23 @@ const NoteContainer = ({
   handleSearch,
 }) => {
   return (
-    <DragDropContext>
-      <div>
-        <Header />
-
-        <Droppable droppableId="dropID">
-          {(provided) => {
-            <div
-              ref={provided.innerRef}
-              {...provided.droppableProps}
-              className="notes-container"
-            >
-              {notesArr.map((note) => (
-                <div key={note.id}>
-                  <Note
-                    text={note.text}
-                    date={note.date}
-                    id={note.id}
-                    deleteNoteHandler={deleteNoteHandler}
-                  />
-                </div>
-              ))}
-            </div>;
-            <AddNotes newNote={newNote} />;
-          }}
-        </Droppable>
+    <div>
+      <Header />
+      <AddNotes newNote={newNote} />;
+      <div className="notes-container">
+        {notesArr.map((note) => (
+          <div key={note.id}>
+            <Note
+              text={note.text}
+              date={note.date}
+              id={note.id}
+              deleteNoteHandler={deleteNoteHandler}
+            />
+          </div>
+        ))}
       </div>
-    </DragDropContext>
+      ;
+    </div>
   );
 };
 
