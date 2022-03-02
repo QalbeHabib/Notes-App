@@ -1,0 +1,41 @@
+.new-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 170px;
+  width: 300px;
+  margin: auto;
+  background-color: rgb(189, 255, 127);
+  /* margin: 1rem; this will be deleted after gird in the Notes-conteiner */
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+.note-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+textarea {
+  background-color: transparent;
+  border: none;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+.save-btn {
+  padding: 7px 13px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: aquamarine;
+  font-weight: bold;
+}
+.save-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 2px #000;
+}
