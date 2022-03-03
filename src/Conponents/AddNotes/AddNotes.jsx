@@ -42,7 +42,7 @@ const AddNotes = ({ newNote }) => {
         ></textarea>
       </div>
       <div className="note-footer">
-        <small>{charactorLimit - notetext.length} remaining</small>
+        <small>{charactorLimit - notetext.length} Remaining Word</small>
         <button className="save-btn" onClick={saveNote}>
           save
         </button>
