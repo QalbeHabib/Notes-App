@@ -3,7 +3,9 @@ import NoteContainer from "./Conponents/Notes Container/NoteContainer";
 import "./App.css";
 
 const App = () => {
-  var uniq = "id" + new Date().getTime();
+  var uniq = new Date().getTime();
+
+ 
 
   const [notes, setNotes] = useState([]);
 
@@ -15,6 +17,7 @@ const App = () => {
       text: text,
       date: date,
     };
+    console.log(notes)
 
     const newNotes = [...notes, updateNote];
     setNotes(newNotes);
@@ -45,6 +48,7 @@ const App = () => {
         deleteNoteHandler={deleteNote}
         newNote={storeNewNotes}
       />
+
     </div>
   );
 };
